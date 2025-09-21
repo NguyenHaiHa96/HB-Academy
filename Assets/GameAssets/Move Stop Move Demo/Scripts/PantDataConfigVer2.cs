@@ -6,7 +6,7 @@ using UnityEngine;
 namespace MoveStopMoveDemo
 {
     [CreateAssetMenu(fileName = "PantDataVer2", menuName = "Scriptable Objects/Pant Data Ver 2", order = 1)]
-    public class PanDataConfigVer2 : ScriptableObject
+    public class PantDataConfigVer2 : ScriptableObject
     {
         [SerializeField] private List<PantData> pantDatas;
 
