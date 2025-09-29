@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SlopeMovementDemo
 {
-    [CreateAssetMenu(fileName = "ColorData", menuName = "Scriptable Objects/ColorData", order = 1)]
+    [CreateAssetMenu(fileName = "ColorData", menuName = "Scriptable Objects/Color Data", order = 1)]
     public class ColorData : ScriptableObject
     {
         [SerializeField] Material[] colorMats;
