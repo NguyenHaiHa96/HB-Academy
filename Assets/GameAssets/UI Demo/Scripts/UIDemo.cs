@@ -23,7 +23,7 @@ namespace UIDemo
             btnDemo.onClick.AddListener(OnClick);
             slider.value = 0.8f;
             canvasGroup.alpha = range;
-            imgFill.fillAmount = range;
+            // imgFill.fillAmount = range;
             txtDemo.SetText($"<color=black>Demo Text Black</color>. Normal Text");
             SetupCharacterInfos();
         }

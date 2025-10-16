@@ -27,3 +27,53 @@ public class BotPatrolState : IState<Bot>
         Debug.Log($"{owner.name} is patrolling.");
     }
 }
+
+public class BotSeekingBrickState : IState<Bot>
+{
+    public void OnEnter(Bot owner)
+    {
+        owner.SeekingBrick();
+    }
+
+    public void OnExit(Bot owner)
+    {
+        // Dieu kien chuyen
+        if (owner.HasMeetedBrickCondition())
+        {
+            owner.ChangeState(new BotBuildingState());
+        }
+        else
+        {
+            owner.ChangeState(new BotSeekingBrickState());
+        }
+        
+        if (owner.IsReachedTarget())
+        {
+            owner.ChangeState(new BotSeekingBrickState());
+        }
+        
+    }
+
+    public void OnExcute(Bot owner)
+    {
+        
+    }
+}
+
+public class BotBuildingState : IState<Bot>
+{
+    public void OnEnter(Bot owner)
+    {
+        
+    }
+
+    public void OnExit(Bot owner)
+    {
+        
+    }
+
+    public void OnExcute(Bot owner)
+    {
+        
+    }
+}

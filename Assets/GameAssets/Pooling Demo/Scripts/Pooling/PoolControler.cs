@@ -79,6 +79,7 @@ public enum PoolType
     HpText = 20,
     
     Bot = 30,
+    Brick = 31,
 }
 
 
