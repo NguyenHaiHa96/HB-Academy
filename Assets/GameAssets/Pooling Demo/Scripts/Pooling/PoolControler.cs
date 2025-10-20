@@ -80,6 +80,14 @@ public enum PoolType
     
     Bot = 30,
     Brick = 31,
+    
+    // Weapon 
+    Hammer01 = 100,
+    Hammer02 = 101,
+    Hammer03 = 102,
+    Candy01 = 110,
+    Candy02 = 111,
+    Candy03 = 112,
 }
 
 
